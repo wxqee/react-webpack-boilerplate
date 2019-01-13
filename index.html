@@ -11,11 +11,6 @@
 
     <link href="https://cdn.bootcss.com/normalize/8.0.1/normalize.min.css" rel="stylesheet">
     <link href="https://cdn.bootcss.com/twitter-bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
-    <style></style>
-
-    <% if (webpackConfig.mode === 'production') { %>
-    <script>console.log('[production]');</script>
-    <% } %>
 </head>
 
 <body>
@@ -28,6 +23,11 @@
 
 <!-- Add your site or application content here -->
 <div id="root"></div>
+
+
+<% if (webpackConfig.mode === 'production') { %>
+<script>console.log('[production] may put some track scripts here.');</script>
+<% } %>
 
 <script src="https://cdn.bootcss.com/modernizr/2010.07.06dev/modernizr.min.js"></script>
 
