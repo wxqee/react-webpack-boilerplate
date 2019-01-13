@@ -1,5 +1,6 @@
 import React from "react";
 import { HashRouter as Router, Switch, Route, Link } from "react-router-dom";
+import { Button } from 'antd-mobile';
 
 function AppRouter() {
   return (
@@ -28,7 +29,10 @@ const SiteNavBar = () => (
 );
 
 const HomePage = () => (
-  <h3>Home page</h3>
+  <React.Fragment>
+    <h3>Home page</h3>
+    <Button onClick={() => alert('wow!')}>Say Hi</Button>
+  </React.Fragment>
 );
 
 const NotFoundPage = ({ location }) => (
