@@ -6,6 +6,8 @@ module.exports = merge(common, {
     devtool: 'source-map',
     devServer: {
         contentBase: './dist',
+        port: 3000,
+        disableHostCheck: true,
     },
 });
 
